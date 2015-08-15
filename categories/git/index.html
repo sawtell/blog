@@ -1,14 +1,14 @@
 ---
 layout: default
-permalink: /drupal/
+permalink: /git/
 ---
 <div class="home">
 
-  <h1 class="page-heading">Drupal Posts</h1>
+  <h1 class="page-heading">Git Posts</h1>
 
   <ul class="post-list">
     {% for post in site.posts %}
-      {% if post.categories contains 'drupal' %}
+      {% if post.categories contains 'git' %}
         {% include post-teaser.html post=post %}
       {% endif %}
     {% endfor %}

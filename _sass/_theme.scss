@@ -97,3 +97,13 @@ ul.post-list {
     }
   }
 }
+
+// Footers
+footer {
+  &.site-footer {
+    padding: 2em 0;
+    background: $greyDarkest;
+    color: $greyLight;
+    margin-top: 2em;
+  }
+}

@@ -14,13 +14,13 @@ $colour:     #eaeaea;
 
 // Defaults
 .highlight {
-  color: $colour;
   pre, code {
+    color: $colour;
     background: $background;
   }
   * { font-weight: normal !important }
   // Plain
-  .nb, .na, .no, .x, .o, .p { color: $colour }
+  .nb, .na, .no, .x, .o, .p, .n { color: $colour }
   // Literal Numbers
   .m, .mf, .mh, .mi, .mo, .il { color: $number }
   // Literal Strings
