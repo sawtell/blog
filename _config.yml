@@ -17,3 +17,11 @@ permalink: none
 
 sass:
   style: compressed
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"

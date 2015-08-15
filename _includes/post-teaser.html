@@ -1,0 +1,17 @@
+{% assign post = include.post %}
+<li class="row">
+  <div class="post-meta col-xs-2 hidden-xs">
+    <div class="day">{{ post.date | date: "%-d" }}</div>
+    <div class="month-year">{{ post.date | date: "%b %Y" }}</div>
+  </div>
+
+  <div class="post-content col-sm-10">
+    <h2>
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </h2>
+
+    <div>
+      {{ post.excerpt }}
+    </div>
+  </div>
+</li>

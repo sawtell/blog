@@ -1,10 +1,8 @@
 ---
-layout: post
 title:  "HTTP Authentication with PHP"
 date:   2015-01-15
 categories: PHP
 tags: PHP
-published: true
 ---
 
 This is useful if you are using a hosting solution that makes it tricky or impossible to implement HTTP authentication with the web server.

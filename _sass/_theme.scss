@@ -3,7 +3,9 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+// Headers
 header {
+  // Site header
   &.site-header {
     background: url(../images/css/header-backg.jpg) no-repeat center center;
     height: 150px;
@@ -15,6 +17,7 @@ header {
     }
   }
 
+  // Post header
   &.post-header {
     text-align: center;
     margin-bottom: 2em;
@@ -56,3 +59,41 @@ header {
   }
 }
 
+// Blog post lists
+ul.post-list {
+  padding: 0;
+
+  li {
+    border-bottom: 1px solid $greyLighter;
+    margin-bottom: 1.5em;
+    list-style: none;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 0.5em;
+      a {
+        text-decoration: none;
+      }
+    }
+
+    .post-meta {
+      font-family: $font-family-sans-serif-alt;
+      border-right: 1px dashed $greyLight;
+      text-align: center;
+      margin-bottom: 1em;
+      .day {
+        font-size: 3em;
+        line-height: 1;
+        font-weight: 100;
+      }
+    }
+
+    .post-content {
+      padding-left: 1em;
+    }
+  }
+}
