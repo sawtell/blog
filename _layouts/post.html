@@ -8,7 +8,7 @@ layout: default
     <p class="post-meta">{{ page.date | date_to_string }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
     <div class="post-category">
       {% for category in page.categories %}
-        <a href="/{{ category | prepend: site.baseurl }}">
+        <a href="{{ '/' | append: category | prepend: site.baseurl }}">
           {{ category }}
         </a>
       {% endfor %}
