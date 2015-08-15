@@ -13,4 +13,7 @@ github_username:
 # Build settings
 markdown: kramdown
 
-permalink: /:title.html
+permalink: none
+
+sass:
+  style: compressed
