@@ -1,0 +1,17 @@
+---
+layout: default
+permalink: /sport/
+---
+<div class="home">
+
+  <h1 class="page-heading">Sport Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      {% if post.categories contains 'sport' %}
+        {% include post-teaser.html post=post %}
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+</div>
