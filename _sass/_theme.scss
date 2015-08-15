@@ -1,0 +1,58 @@
+body {
+  font-weight: $font-weight-base;
+  -webkit-font-smoothing: antialiased;
+}
+
+header {
+  &.site-header {
+    background: url(../images/css/header-backg.jpg) no-repeat center center;
+    height: 150px;
+    text-align: center;
+    margin-bottom: 50px;
+    &.slim {
+      height: 85px;
+      background-position: center 95%;
+    }
+  }
+
+  &.post-header {
+    text-align: center;
+    margin-bottom: 2em;
+    .post-title {
+      font-size: 2.2em;
+      margin: 0 0 0.5em;
+    }
+    .post-meta {
+      font-size: 0.9em;
+      font-family: $font-family-sans-serif-alt;
+      display: block;
+    }
+
+    .post-category {
+      margin: 1em 0 0.5em;
+      a {
+        text-transform: uppercase;
+        @include myButton($blue, transparent, $white, $blue);
+      }
+    }
+  }
+}
+
+// Code blocks
+.highlight {
+  line-height: inherit;
+  padding: 0.4em;
+  @include box-shadow(0 1px 5px 0 rgba(0,0,0,0.2));
+  margin-bottom: 1.5em;
+  pre {
+    margin: 0;
+  }
+  code {
+    overflow-x: auto;
+    font-family: $font-family-monospace;
+    font-size: 14px;
+    word-wrap: normal;
+    white-space: pre;
+  }
+}
+

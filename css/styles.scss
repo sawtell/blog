@@ -7,6 +7,8 @@
 // Yeti theme variables
 @import "yeti_variables";
 
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:300|Roboto:300);
+
 // My variable overrides
 @import "my_variables";
 
@@ -63,4 +65,4 @@
 @import "yeti_bootswatch";
 
 // My theme overrides
-@import "bootstrap_overrides";
+@import "theme";

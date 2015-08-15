@@ -20,7 +20,7 @@ $colour:     #eaeaea;
   }
   * { font-weight: normal !important }
   // Plain
-  .nb, .na, .no { color: $colour }
+  .nb, .na, .no, .x, .o, .p { color: $colour }
   // Literal Numbers
   .m, .mf, .mh, .mi, .mo, .il { color: $number }
   // Literal Strings
