@@ -3,7 +3,7 @@ title: Saw.tl
 email:
 description: > # this means to ignore newlines until "baseurl:"
   Drupal and other open source PHP code snippets as well as other ramblings from Louis Sawtell
-baseurl: "/blog" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://saw.tl" # the base hostname & protocol for your site
 twitter_username: l_sawtell
 github_username:
