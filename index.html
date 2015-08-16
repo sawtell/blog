@@ -1,15 +1,24 @@
 ---
 layout: default
 ---
-
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      {% include post-teaser.html post=post %}
-    {% endfor %}
+  <ul class="category-filters" id="category-filters">
+    <li>
+      <a class="category-filter active" href="#">All</a>
+    </li>
+  {% for category in site.data.categories %}
+    <li>
+      <a class="category-filter" href="#{{ category | downcase }}">{{ category }}</a>
+    </li>
+  {% endfor %}
   </ul>
+
+    <div class="post-list grid" id="grid-container">
+      <div class="gutter-width"></div>
+      {% for post in site.posts %}
+        {% include post-teaser.html post=post %}
+      {% endfor %}
+    </div>
 
 </div>
