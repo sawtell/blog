@@ -1,6 +1,7 @@
 body {
   font-weight: $font-weight-base;
   -webkit-font-smoothing: antialiased;
+  background: $greyDarkest;
 }
 
 table {
@@ -18,12 +19,78 @@ header {
   // Site header
   &.site-header {
     background: url(../images/css/header-backg.jpg) no-repeat center center;
-    height: 150px;
-    text-align: center;
-    margin-bottom: 50px;
+    min-height: 150px;
+    margin-bottom: 0;
+
     &.slim {
-      height: 85px;
+      min-height: 85px;
       background-position: center 95%;
+    }
+    .navbar {
+      margin-bottom: 0;
+      &.navbar-right {
+        margin-right: 0;
+      }
+    }
+
+    nav.navbar {
+      padding-top: 1.2em;
+      background: none;
+      font-family: $font-family-sans-serif;
+      font-size: 1em;
+
+      .navbar-header {
+        .navbar-brand {
+          background: rgba(0,0,0,0.3);
+          margin-right: 1em;
+          @include border-top-radius(5px);
+          @include border-right-radius(5px);
+          @include border-bottom-radius(5px);
+          @include border-left-radius(5px);
+          &:hover {
+            background: rgba(0,0,0,0.5);
+          }
+        }
+      }
+
+      .nav-pills {
+        a {
+          //background: rgba(0,0,0,0.5);
+          &:hover {
+            background: rgba(0,0,0,0.2);
+          }
+        }
+      }
+
+      .navbar-social {
+        li {
+          display: inline-block;
+          list-style: none;
+          margin-left: 10px;
+
+          .rss-subscribe,
+          .twitter {
+            width: 40px;
+            height: 40px;
+            display: block;
+            fill: rgba(0,0,0,0.5);
+            &:hover {
+              fill: $blue;
+            }
+          }
+          .rss-subscribe {
+            background-color: rgba(0,0,0,0.5);
+            border-radius: 50%;
+            color: $white;
+            fill: $white;
+            padding: 5px;
+            &:hover {
+              background-color: rgba(0,0,0,1);
+              fill: orange;
+            }
+          }
+        }
+      }
     }
   }
 
@@ -49,6 +116,12 @@ header {
       }
     }
   }
+}
+
+.page-content {
+  background-color: $white;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
 }
 
 // Code blocks
@@ -77,7 +150,7 @@ header {
     display: inline;
     display: inline-block;
     margin-right: 0.5em;
-    margin-bottom: 0.5em;
+    margin-bottom: 1.5em;
     a {
       @include myButton($green, transparent, $white, $green);
       &.active {
@@ -156,9 +229,8 @@ header {
 footer {
   &.site-footer {
     padding: 2em 0;
-    background: $greyDarkest;
     color: $greyLight;
-    margin-top: 2em;
+    margin-top: 0;
     .copy {
       font-size: 0.8em;
       .twitter {
@@ -170,5 +242,14 @@ footer {
         }
       }
     }
+  }
+}
+
+@media only screen and (max-width: $container-sm) {
+  .post-list .grid-item {
+    width: 100%;
+  }
+  .navbar-header {
+    padding-left: 10px;
   }
 }

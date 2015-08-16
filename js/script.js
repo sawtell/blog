@@ -7,6 +7,7 @@
       // options
       itemSelector: '.grid-item',
       columnWidth: '.grid-item',
+      percentPosition: true,
       masonry: {
         // set to the element
         columnWidth: '.grid-item',
