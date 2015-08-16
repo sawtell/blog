@@ -18,8 +18,8 @@ layout: default
   <article class="post-content">
     {{ content }}
   </article>
-
-  {% if page.comments %}
+  
+  {% if page.comments == 1 %}
   <aside>
     <div id="disqus_thread"></div>
     <script type="text/javascript">

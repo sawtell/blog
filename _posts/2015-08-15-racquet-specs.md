@@ -3,6 +3,7 @@ title:  "My custom racquet specs"
 date:   2015-08-15
 categories: Sports
 tags: Sports
+comments: 0
 ---
 I'm a bit of a gear junkie. With every sport there are companies that want to make money and every year promise "*innovation*". Tennis is no different.
 
