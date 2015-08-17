@@ -3,6 +3,8 @@ title:  "Create Drupal users with Drush"
 date:   2014-02-21
 categories: Drupal
 tags: Drupal
+redirect_from:
+  - /create-drupal-users-drush/
 ---
 
 This is especially useful if you don't have a login to create accounts through the web interface.

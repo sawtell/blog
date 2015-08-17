@@ -3,6 +3,8 @@ title:  "Installing drush for MAMP with Homebrew"
 date:   2014-02-04
 categories: SysAdmin
 tags: SysAdmin
+redirect_from:
+  - /installing-drush-mamp-homebrew/
 ---
 
 ###Install Homebrew

@@ -3,6 +3,8 @@ title:  "Drupal - Remove system CSS styles"
 date:   2011-11-22
 categories: Drupal
 tags: Drupal
+redirect_from:
+  - /drupal-remove-system-css-styles/
 ---
 There's been many a time where I've created the perfect CSS in a static site design only for it to be pulled to pieces by Drupal's system styles.
 The solution is `hook_css_alter(&$css)` which can reside in your template.php file:

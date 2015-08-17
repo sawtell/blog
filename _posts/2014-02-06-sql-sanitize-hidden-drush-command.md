@@ -3,6 +3,8 @@ title:  "sql-sanitize: The hidden Drush command"
 date:   2014-02-06
 categories: Drupal
 tags: Drupal
+redirect_from:
+  - /sql-sanitize-hidden-drush-command/ 
 ---
 
 Nosing around in the Drush code I noticed that there some extra commands that are hidden from view.

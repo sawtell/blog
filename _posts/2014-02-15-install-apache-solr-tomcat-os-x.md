@@ -3,6 +3,8 @@ title:  "Install Apache Solr on Tomcat - OS X"
 date:   2014-02-15
 categories: SysAdmin
 tags: SysAdmin
+redirect_from:
+  - /install-apache-solr-tomcat-os-x/
 ---
 
 To get Apache Solr running with Tomcat on OS X there are just a few steps to take

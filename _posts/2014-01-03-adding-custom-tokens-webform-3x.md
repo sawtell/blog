@@ -3,6 +3,8 @@ title:  "Adding custom tokens to Webform 3.x"
 date:   2014-01-03
 categories: Drupal
 tags: Drupal
+redirect_from:
+  - /adding-custom-tokens-webform-3x/
 ---
 
 There has been a couple of occassions where I have needed to add a custom token to the webform module (ver. 3.x).

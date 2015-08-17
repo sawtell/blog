@@ -3,6 +3,8 @@ title:  "Redirect search block to default Apache Solr search page"
 date:   2015-01-08
 categories: Drupal
 tags: Drupal
+redirect_from:
+  - /redirect-search-block-default-apache-solr-search-page/
 ---
 
 For some reason the default search page option on Apache Solr search pages isn't respected. This form alter hook and submit handler do the trick.

@@ -3,6 +3,8 @@ title:  "Tomcat - cannot find ./bin/catalina.sh"
 date:   2012-10-23
 categories: Drupal
 tags: Drupal
+redirect_from:
+  - /tomcat-cannot-find-bincatalinash/
 ---
 A routine installation of Tomcat and for some reason, trying to start up the server I get the following error:
 

@@ -3,6 +3,8 @@ title:  "Apache Solr - filter results with an OR query"
 date:   2011-12-07
 categories: Drupal
 tags: Drupal
+redirect_from:
+  - /apache-solr-filter-results-or-query/
 ---
 By default, adding filters to the query object will use the *AND* operator. To use **OR**, you will need to add a `SolrFilterSubQuery`.
 

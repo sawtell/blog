@@ -3,6 +3,8 @@ title:  "How to use Rsync to download files"
 date:   2014-02-10
 categories: SysAdmin
 tags: SysAdmin
+redirect_from:
+  - /how-use-rsync-download-files/
 ---
 
 ###@See: [How to use Rsync to synchronise directories]

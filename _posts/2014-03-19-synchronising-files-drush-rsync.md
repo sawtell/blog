@@ -3,6 +3,8 @@ title:  "Synchronising files with Drush rsync"
 date:   2014-03-19
 categories: Drupal
 tags: Drupal
+redirect_from:
+  - /synchronising-files-drush-rsync/
 ---
 
 I previously wrote a post about [synchronising files using rsync]. However, Drush allows for a much more convenient way to sync files between environments.

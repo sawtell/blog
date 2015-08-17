@@ -3,6 +3,8 @@ title:  "Add custom fields to the Apache Solr index"
 date:   2013-11-22
 categories: Drupal
 tags: Drupal
+redirect_from:
+  - /add-custom-fields-apache-solr-index/
 ---
 >Note: This was written using [apachesolr] version 7.x-1.5
 

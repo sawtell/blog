@@ -3,6 +3,8 @@ title:  "Setting up a crontab with examples"
 date:   2013-12-19
 categories: SysAdmin
 tags: SysAdmin
+redirect_from:
+  - /setting-crontab-examples/
 ---
 Create or edit a crontab by running:
 

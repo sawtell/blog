@@ -3,6 +3,8 @@ title:  "Reset Drupal's theme using MySQL"
 date:   2011-03-14
 categories: Drupal
 tags: Drupal
+redirect_from: 
+  - /reset-drupals-theme-using-mysql/
 ---
 It's possible to break everything by doing something so little for example renaming/removing the current theme without disabling it first.
 It may also be the case that a new theme is installed which gives that white screen of death.

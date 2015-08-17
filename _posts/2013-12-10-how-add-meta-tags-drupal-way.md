@@ -3,6 +3,8 @@ title:  "How to add meta tags the Drupal way"
 date:   2013-12-10
 categories: Drupal
 tags: Drupal
+redirect_from:
+  - /how-add-meta-tags-drupal-way/
 ---
 When adding meta tags to the site `<head>`, use [drupal_add_html_head()] in the `template.php` file.
 

@@ -3,6 +3,8 @@ title:  "Validate form in AJAX submit callback"
 date:   2012-12-05
 categories: Drupal
 tags: Drupal
+redirect_from:
+  - /validate-form-ajax-submit-callback/
 ---
 Using an AJAX callback on a form submit doesn't call the validate functions by default and means that form values can be submitted and saved without being confirmed as valid.
 I'm not sure of the best solution for this problem is, but below is the way I handle it.

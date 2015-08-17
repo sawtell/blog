@@ -3,6 +3,8 @@ title:  "MySQL query - order results by an array"
 date:   2011-12-03
 categories: Database
 tags: Database
+redirect_from:
+  - /mysql-query-order-results-array/
 ---
 ###The Problem
 

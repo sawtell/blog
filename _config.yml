@@ -24,3 +24,6 @@ defaults:
     values:
       layout: "post"
       comments: 1
+
+gems:
+  - jekyll-redirect-from

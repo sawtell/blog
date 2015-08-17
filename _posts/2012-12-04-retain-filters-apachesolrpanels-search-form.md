@@ -3,6 +3,8 @@ title:  "Retain filters on apachesolr_panels search form"
 date:   2012-12-04
 categories: Drupal
 tags: Drupal
+redirect_from:
+  - /retain-filters-apachesolrpanels-search-form/
 ---
 I have been using the [apachesolr_panels] module in a project recently and couldn't find an option to retain filters when performing a keyword search.
 

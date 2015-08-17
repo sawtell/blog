@@ -3,6 +3,8 @@ title:  "Programmatically manage Drupal blocks"
 date:   2013-01-11
 categories: Drupal
 tags: Drupal
+redirect_from:
+  - /programmatically-manage-drupal-blocks/
 ---
 Managing blocks through code can be very valuable, especially if you are running clean deployments of just the codebase. You can use hook_block_info_alter() to configure the default blocks disable/move/change visibility status.
 
