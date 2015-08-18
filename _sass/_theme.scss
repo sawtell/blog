@@ -4,6 +4,12 @@ body {
   background: $greyDarkest;
 }
 
+.elegant-load {
+  opacity: 0;
+  height: 0;
+  transition: opacity 1s ease 0s, height 0s ease 1s;
+}
+
 table {
   @extend .table;
   @extend .table-striped;
@@ -83,7 +89,6 @@ header {
             border-radius: 50%;
             color: $white;
             fill: $white;
-            padding: 5px;
             &:hover {
               background-color: rgba(0,0,0,1);
               fill: orange;

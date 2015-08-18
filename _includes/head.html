@@ -8,8 +8,16 @@
 
   <link rel="shortcut icon" href="{{ '/images/favicon.ico' | prepend: site.baseurl }}" type="image/vnd.microsoft.icon">
 
-  <link rel="stylesheet" href="{{ '/css/styles.css' | prepend: site.baseurl }}">
-  <link rel="stylesheet" href="{{ '/css/syntax.css' | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
+  <style>
+    .elegant-load {
+      position: absolute;
+      z-index: 99;
+      background: #FFF;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
 </head>
