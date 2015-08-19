@@ -16,7 +16,6 @@
     });
 
     var hash = window.location.hash;
-    console.log(hash);
     if (hash) {
       if ($('.category-filter[href="' + hash + '"').length) {
         var category = hash.replace('#', '');
@@ -41,21 +40,8 @@
       }
     });
 
+    // Parallax library.
+    $.stellar({responsive: true});
+
   });
 })(jQuery);
-
-//docReady( function() {
-//
-//  var container = document.querySelector('#grid-container');
-//  var msnry = new Masonry( container, {
-//    columnWidth: '.grid-item'
-//  });
-//
-//  var togglerButton = document.querySelector('.category-filter');
-//  var areW2Hidden = false;
-//  eventie.bind( togglerButton, 'click', function() {
-//    areW2Hidden = !areW2Hidden;
-//    container.className = areW2Hidden ? container.className + ' hide-drupal' : '';
-//    msnry.layout();
-//  });
-//});

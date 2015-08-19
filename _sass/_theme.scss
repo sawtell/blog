@@ -20,6 +20,11 @@ table {
   }
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 // Headers
 header {
   // Site header
@@ -89,6 +94,7 @@ header {
             border-radius: 50%;
             color: $white;
             fill: $white;
+            padding: 4px;
             &:hover {
               background-color: rgba(0,0,0,1);
               fill: orange;
@@ -123,10 +129,37 @@ header {
   }
 }
 
+.parallax-wrapper {
+  height: 250px;
+}
+.pre-parallax {
+  padding-bottom: 1em;
+}
+.post-parallax {
+  padding-top: 2em;
+}
+
 .page-content {
   background-color: $white;
   padding-top: 2.5em;
   padding-bottom: 2.5em;
+}
+
+.full-width {
+  .page-content {
+    background-color: transparent;
+    padding: 0;
+    &:before, &:after {
+      content: ' ';
+      height: 2.5em;
+      display: block;
+      background-color: $white;
+    }
+  }
+}
+
+.content {
+  background: $white;
 }
 
 // Code blocks
@@ -168,6 +201,7 @@ header {
   }
 }
 
+// For isotope library.
 .gutter-width {
   width: 2%;
 }
@@ -200,6 +234,7 @@ header {
       font-size: 0.8em;
       text-align: center;
       margin-bottom: 1em;
+      // Time icon
       .glyphicon {
         font-size: 0.88em;
       }
@@ -210,9 +245,6 @@ header {
       }
     }
 
-    .post-content {
-      //padding-left: 1em;
-    }
     .panel-link {
       display: block;
       width: 100%;
@@ -229,6 +261,107 @@ header {
   }
 }
 
+.about-me {
+  .social-links {
+    padding: 0;
+    margin: 0 0 0.5em;
+    li {
+      list-style: none;
+      display: inline;
+      margin-right: 1em;
+    }
+  }
+  .skill-list {
+    dt {
+      margin-bottom: 0.5em;
+    }
+    dd {
+      width: 32%;
+      margin-bottom: 0.5em;
+      display: inline-block;
+      &:before {
+        content: '•';
+        margin-right: 1em;
+      }
+      @media only screen and (min-width: $container-md) {
+        width: 24%;
+      }
+    }
+  }
+
+  .avatar-wrapper {
+    text-align: center;
+    vertical-align: middle;
+    @media only screen and (min-width: $container-lg) {
+      margin-top: -2em;
+    }
+    .avatar {
+      width: 50%;
+    }
+  }
+
+  .tennis {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    overflow-x: hidden;
+    .tennis-stuff {
+      max-width: 1920px;
+      height: 1080px;
+      background: url('../images/louis_tennis.jpg') no-repeat center 50%;
+      background-size: cover;
+      margin: 0 auto;
+      .caption {
+        position: absolute;
+        top: 50%;
+        left: 7%;
+        font-size: 5em;
+        font-family: 'arial black', sans-serif;
+        letter-spacing: -0.08em;
+        text-transform: uppercase;
+        line-height: 0.9;
+        color: white;
+        margin-top: -1.2em;
+        .pre-title {
+          font-size: 0.57em;
+        }
+      }
+    }
+  }
+
+  dl.key-value {
+    dt {
+      width: 11em;
+      float: left;
+      @media only screen and (max-width: $container-md) {
+        float: none;
+        width: 100%;
+      }
+    }
+    dd {
+      margin-bottom: 0.5em;
+    }
+  }
+
+  .full-width-vid-outer-wrapper {
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    .full-width-vid-wrapper {
+      video {
+        width: 1920px;
+        height: 1080px;
+      }
+    }
+  }
+
+  .badges {
+    text-align: center;
+  }
+}
 
 // Footers
 footer {
@@ -236,6 +369,7 @@ footer {
     padding: 2em 0;
     color: $greyLight;
     margin-top: 0;
+    background: $greyDarkest;
     .copy {
       font-size: 0.8em;
       .twitter {
@@ -249,6 +383,59 @@ footer {
     }
   }
 }
+
+//#outer-wrap {
+//  position: relative;
+//  width: 100%;
+//  height: 350px !important;
+//  overflow: hidden;
+//  #vid-wrap {
+//    position: relative;
+//    padding-bottom: 57%;
+//    height: 0;
+//    #my-video {
+//      //margin: 0;
+//      //padding: 0;
+//      //border: 0;
+//      //border-image-source: initial;
+//      //border-image-slice: initial;
+//      //border-image-width: initial;
+//      //border-image-outset: initial;
+//      //border-image-repeat: initial;
+//      //min-width: 0px;
+//      //max-width: none;
+//      //min-height: 0px;
+//      //max-height: none;
+//      width: 100% !important;
+//      height: 100% !important;
+//      position: absolute;
+//      left: 0;
+//      top: -30%;
+//      video {
+//        width: 100%;
+//        height: auto !important;
+//      }
+//    }
+//  }
+//}
+
+//#my-outer-wrap {
+//  position: relative;
+//  width: 100%;
+//  height: 300px;
+//  overflow: hidden;
+//  #my-vid-wrap {
+//    position: relative;
+//    //padding-bottom: 57%;
+//    height: 100%;
+//    video {
+//      position: relative;
+//      width: 100%;
+//      height: auto;
+//      top: -65%
+//    }
+//  }
+//}
 
 @media only screen and (max-width: $container-sm) {
   .post-list .grid-item {

@@ -1,40 +1,96 @@
 ---
-layout: default
+layout: full_width
 title: About me
-published: false
+published: true
 ---
+<div class="about-me">
+  <div class="content">
+    <div class="container pre-parallax">
+      <h1>About Me</h1>
 
-<div class="xs-hidden col-sm-3">
-  <img src="http://www.gravatar.com/avatar/6ca71e9cc693aba452b11f1d0d00c60b" alt="Louis">
+      <div class="row">
+        <div class="col-sm-8">
+          <p>Hi, I'm Louis and I'm a Drupal developer from South East UK. I have been building websites with Drupal for over 4 years at <a href="http://miggle.co.uk">miggle</a> where I'm now a senior developer.</p>
+          <p>I do like to explore other frameworks and have recently been looking into Symfony2 and learning about key object orientated practices.</p>
+          <p>When I'm not in front of a screen of code you'll likely find me playing sports or walking my dog.</p>
+        </div>
+
+        <div class="hidden-xs col-sm-4 avatar-wrapper">
+          <img class="avatar img-circle" src="{{ '/images/louis_avatar.jpg' | prepend: site.baseurl }}" alt="Louis">
+        </div>
+      </div>
+
+      <h2>Skills</h2>
+      <dl class="skill-list">
+        <dt>Development tools</dt>
+        <dd>PHP</dd>
+        <dd>Drupal</dd>
+        <dd>SCSS/CSS</dd>
+        <dd>Git</dd>
+        <dd>MySQL</dd>
+        <dd>jQuery</dd>
+        <dd>Vagrant</dd>
+        <dd>Jekyll</dd>
+        <dd>Bootstrap</dd>
+        <dd>Composer</dd>
+
+        <dt>Software/Services</dt>
+        <dd>OS X</dd>
+        <dd>Photoshop</dd>
+        <dd>Jira</dd>
+        <dd>Acquia Cloud</dd>
+      </dl>
+    </div>
+  </div>
+
+  <div class="parallax-wrapper">
+    <div class="tennis" data-stellar-ratio="1.25" data-stellar-vertical-offset="1200">
+      <div class="tennis-stuff">
+        <p class="caption container"><span class="pre-title">I like to play</span><br>
+        Tennis</p>
+      </div>
+    </div>
+  </div>
+
+  <!--<div style="height: 300px; overflow:hidden"></div>-->
+  <!--<div class="full-width-vid-outer-wrapper" data-stellar-ratio="1.2" data-stellar-vertical-offset="250">-->
+    <!--<div class="full-width-vid-wrapper">-->
+      <!--<video preload="metadata" autoplay="autoplay" loop="loop">-->
+        <!--<source src="{{ '/images/mental_dog_compressed.mp4' | prepend: site.baseurl }}" type="video/mp4">-->
+      <!--</video>-->
+    <!--</div>-->
+  <!--</div>-->
+
+  <div class="content">
+    <div class="container post-parallax">
+      <div class="row">
+        <div class="col-sm-6">
+          <p>I've been playing tennis on and off for years but have been playing pretty regularly in the last decade. Recently I have been playing more competitively and taking part in the Sussex county league.</p>
+        </div>
+
+        <div class="col-sm-6">
+          <dl class="key-value">
+            <dt>Racquet:</dt><dd>Tecnifibre TFight 315 ltd 16m</dd>
+            <dt>String:</dt><dd>Pros Pro Blackout @ 22kg</dd>
+            <dt>Favourite surface:</dt><dd>Medium pace acrylic</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="badges">
+        <img src="{{ '/images/logo2104april.png' | prepend: site.baseurl }}" alt="Acquia certified">
+        <img src="{{ '/images/association_ind_member_badge.svg' | prepend: site.baseurl }}" alt="Drupal association member">
+
+        <hr>
+
+        <ul class="social-links">
+          <li><a href="#">Linked In</a></li>
+          <li><a href="#">Drupal.org</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+
+
+    </div>
+  </div>
 </div>
-
-<div class="col-sm-9">
-  <h1>About Me <small>Louis..</small></h1>
-
-  <p>Developer in the south east</p>
-
-  <ul>
-    <li>
-      <a href="#" class="icon-17 linkedin" title="LinkedIn">
-        <svg viewBox="0 0 512 512">
-          <path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"/>
-        </svg><!--[if lt IE 9]><em>LinkedIn</em><![endif]-->
-      </a>
-    </li>
-
-    <li>
-      <a href="#"><span class="glyphicon glyphicon-tint" aria-hidden="true"></span></a>
-    </li>
-  </ul>
-</div>
-
-<h3>Skills</h3>
-<ul>
-  <li>PHP</li>
-  <li>Drupal</li>
-  <li>SCSS/CSS</li>
-  <li>Git</li>
-  <li>MySQL</li>
-  <li>OS X</li>
-  <li>Composer</li>
-</ul>
