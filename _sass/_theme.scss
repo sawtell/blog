@@ -384,11 +384,20 @@ footer {
   }
 }
 
+// Mobile styles
 @media only screen and (max-width: $container-sm) {
   .post-list .grid-item {
     width: 100%;
   }
   .navbar-header {
     padding-left: 10px;
+    float: left;
+  }
+  ul.nav.navbar-nav {
+    float: left;
+    margin-top: 2px;
+  }
+  .navbar-right {
+    float: right;
   }
 }
