@@ -13,7 +13,7 @@ However... With that said I think I have found the one, or at least close enough
 
 Below is a reference that won't really be of any use to anyone but myself. Sorry.
 
-Racquet	Weight (g) | Balance (mm) | Swingweight (kgcm^2) | Notes
+Racquet	| Weight (g) | Balance (mm) | Swingweight (kgcm^2) | Notes
 --- | --- | --- | ---
 1 | 321 | 306 | 279 | Plastic and dampener on handle
 1 | 312 | 310 | 279 | Bare
