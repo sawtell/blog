@@ -1,5 +1,5 @@
 {% assign post = include.post %}
-<div class="panel panel-default grid-item category-{{ post.categories }}">
+<div class="panel panel-default grid-item category-{{ post.categories|lower }}">
   <div class="post-content panel-body">
     <h2>
       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>

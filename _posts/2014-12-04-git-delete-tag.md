@@ -5,7 +5,7 @@ categories: Git
 tags: Git
 ---
 
-###@See: [How to: Delete a remote Git tag]
+### @See: [How to: Delete a remote Git tag]
  
 {% highlight bash %}
 # Assuming the tag to delete is "1.3.5-rc1"
